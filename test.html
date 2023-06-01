@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Szachy</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-image: url(https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/PedroPinhata/phpgDv2hm.png);
+      background-size: cover;
+    }
+
+    .container {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: rgba(26, 25, 25, 0.8);
+      padding: 20px;
+    }
+
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(to right, #80a885, #477e18);
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .content {
+      margin-top: 60px;
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bolder;
+      color: white;
+      background: linear-gradient(to right, #80a885, #477e18);
+    }
+
+    p {
+      font-size: 26px;
+      color: white;
+      overflow: auto;
+    }
+
+
+    [data-image-id="1"]{
+        float: right;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+  [data-image-id="2"]{
+    float: right;
+    margin-left: 20px;
+  }
+  [data-image-id="3"]{
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  [data-image-id="4"]{
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  [data-image-id="5"]{
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+    h2 {
+    font-size: 35px;
+      font: italic;
+      font-weight: bolder;
+      color: rgb(255, 255, 255);
+      background: linear-gradient(to right, #80a885, #477e18);
+    }
+    h3{
+      font-size: 35px;
+      font: italic;
+      font-weight: bolder;
+      color: rgb(255, 255, 255);
+    }
+    .mały-text{
+      font-size: 22px;
+    }
+    h1, h2, h3{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <ul>
+        <li><a href="#Strona Główna">Strona Tytułowa</a></li>
+        <li><a href="#Opis">Opis</a></li>
+        <li><a href="#Otwarcia">Otwarcia</a></li>
+        <li><a href="#Gambity">Gambity</a></li>
+        <li><a href="#Ocena">Ocena</a></li>
+        
+      </ul>
+    </nav>
+    <div class="content">
+      <h1 id="Strona Główna">Szachy</h1>
+      <h3>Gambity i Otwarcia</h3>
+    </div>
+    <div id="Opis" style="height: 800px;">
+      <h2>Opis</h2>
+      <p>Szachy są strategiczną grą planszową, która jest jedną z najstarszych znanych gier. Gra rozgrywana jest pomiędzy dwoma graczami na kwadratowej planszy podzielonej na 64 pola, które są kolorowane na przemian na jasne i ciemne. Każdy gracz ma zestaw 16 pionów, które różnią się kształtem i ruchem.</p>
+      <img src="https://chessily.com/wp-content/uploads/2022/04/chess-board-setup-the-chess-starting-position.png" width="250px" height="200px" data-image-id="1" alt="szachownica"/>
+      <p>Podstawowymi figurami w szachach są:</p>
+<p> 1. <a href="https://pl.wikipedia.org/wiki/Pion_(szachy)" target="_blank">Król</a> - najważniejsza figura, którą trzeba chronić za wszelką cenę. Król może poruszać się o jedno pole w dowolnym kierunku.<br>
+    2. <a href="https://pl.wikipedia.org/wiki/Hetman_(szachy)" target="_blank">Hetman</a> - najpotężniejsza figura, może poruszać się na skos, pionowo i poziomo o dowolną liczbę pól.<br>
+    3. <a href="https://pl.wikipedia.org/wiki/Wie%C5%BCa_(szachy)" target="_blank">Wieża</a> - porusza się poziomo i pionowo o dowolną liczbę pól.<br>
+    4. <a href="https://pl.wikipedia.org/wiki/Goniec_(szachy)" target="_blank">Goniec</a> - porusza się po skosie o dowolną liczbę pól.<br>
+    5. <a href="https://pl.wikipedia.org/wiki/Skoczek_(szachy)" target="_blank">Skoczek</a> - ma nietypowy ruch, porusza się w kształcie litery "L" o dwa pola w jednym kierunku i jedno pole prostopadle do niego.<br>
+    6. <a href="https://pl.wikipedia.org/wiki/Pion_(szachy)" target="_blank">Piony</a> - poruszają się do przodu o jedno pole, ale mają specjalne zasady ruchu przy pierwszym ruchu.</p>
+    </div>
+    <div id="Otwarcia" style="height: 900px;">
+      <h2>Otwarcia</h2>
+      <p>Najpopularniejszym otwarciem w szachach jest otwarcie nazwane "1.e4". <img src="https://images.chesscomfiles.com/uploads/game-gifs/90px/tan/book/0/cc/0/0/bUNZSWd2MlVmQTkya3M1UWxCSUJzQlpS.gif" width="250px" height="200px" data-image-id="2" alt="Sicilian Defense: Hyperaccelerated Dragon Variation"/> Oznacza to, że biały gracz rozpoczyna partię, przesuwając pionek z pola e2 na pole e4. Jest to często wybierane otwarcie, ponieważ umożliwia kontrolę nad centrum szachownicy i umożliwia szybkie rozwinięcie figur.</p>
+
+      <p>Partia hiszpańska, znana również jako Ruy Lopez, jest jednym z najstarszych i najbardziej znanych otwarć w szachach. <img src="https://images.chesscomfiles.com/uploads/game-gifs/90px/tan/book/0/cc/0/1/bUMwS2d2NVFmSA,,.gif" width="250px" height="200px" data-image-id="3" alt="Partia hiszpańska"/> Nazwa "hiszpańska" pochodzi od hiszpańskiego szachisty Ruy Lopeza de Segura, który analizował i stosował to otwarcie w XVI wieku.
+
+        Partia hiszpańska rozpoczyna się od posunięć:
+        1.e4 e5,
+        2.Nf3 Nc6,
+        3.Bb5.</p>
+        <p>Jednym z popularnych otwarć w szachach jest Obrona Sycylijska. Obrona ta rozpoczyna się od posunięć:
+          1.e4, c5.
+          
+          Obrona Sycylijska jest znana ze swojej dynamicznej natury i możliwości tworzenia nierównych i ostrych pozycji. <img src="https://images.chesscomfiles.com/uploads/game-gifs/90px/tan/book/0/cc/0/0/bUNZSWd2WlJmQSFU.gif" width="250px" height="200px" data-image-id="4" alt="Obrona Sycylijska"/> Czarne pozwalają białym na kontrolę nad centrum szachownicy, a następnie starają się kontratakować na skrzydłach lub w centrum.</p>
+    </div>
+    <div id="Gambity" style="height: 400px;">
+      <h2>Najpopularniejszy Gambit</h2>
+      <p>
+        Najpopularniejszym gambitem w szachach jest Gambit Hetmański, znany również jako Gambit Królewski. Gambit Hetmański rozpoczyna się od posunięć:
+        1.e4, e5,
+        2.f4.
+        <img src="https://images.chesscomfiles.com/uploads/game-gifs/90px/tan/book/0/cc/0/0/bUMwS2RONU9mQU81TjE,.gif" width="250px" height="200px" data-image-id="5" alt="Gambit Królowej"/>
+        W tym momencie biały gracz ofiarowuje pionka, rzucając wyzwanie czarnemu, który ma teraz możliwość przyjęcia gambitu i odebrania pionka, bądź odrzucenia gambitu i kontynuowania rozwoju swoich figur. </p>
+    </div>
+    <div id="Ocena" style="height: 500px;">
+      <h2>Przesłanie oceny</h2>
+      <form action="https://formspree.io/f/xayzgybe" method="POST">
+        <label for="email"><p class="mały-text">Email:</p></label>
+        <br>
+        <input type="email" id="email" name="email" required style="width: 300px; padding: 10px; background-color: #f1f1f1;"><br><br>
+    
+        <label for="opinia"><p class="mały-text">Opinia:</p></label><br>
+        <textarea id="opinia" name="opinia" rows="8" cols="50" required style="width: 400px; padding: 10px; background-color: #f1f1f1;"></textarea><br><br>
+    
+        <input type="submit" value="Prześlij" style="padding: 10px 20px;">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
